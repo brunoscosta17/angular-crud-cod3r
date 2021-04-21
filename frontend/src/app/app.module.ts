@@ -38,13 +38,15 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { FooterComponent } from './components/template/footer/footer.component';
+import { NavigationComponent } from './components/template/navigation/navigation.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
