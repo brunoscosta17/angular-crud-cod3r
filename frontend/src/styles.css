@@ -7,6 +7,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: rgb(227, 94, 107);
 }
 
+.success {
+    background: #008000;
+}
+
+.warning {
+    background: #ffff00;
+}
+
+.error {
+    background: #ff0000;
+}
+
 .v-middle {
     vertical-align: middle;
 }
