@@ -21,7 +21,7 @@ export class ProductService {
       duration: 3000,
       horizontalPosition: 'right',
       verticalPosition: 'top',
-      panelClass: color
+      panelClass: color 
     });
   }
 
