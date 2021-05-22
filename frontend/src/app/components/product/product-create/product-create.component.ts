@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Product } from '../product.model';
 import { ProductService } from '../product.service';
@@ -10,23 +11,25 @@ import { ProductService } from '../product.service';
 })
 export class ProductCreateComponent implements OnInit {
 
+  // form: FormGroup;
+
   product: Product = {
-    name: 'Teste 01',
-    price: 125.9
+    name: '',
+    price: 0
   }
 
   constructor(
     private productService: ProductService,
     private router: Router
-  ) { }
+  ) {
+  }
 
   ngOnInit(): void {
   }
 
   createProduct(): void {
-    this.productService.create(this.  product)
-      .subscribe(() => {
-        
+    this.productService.create(this.product)
+      .subscribe((response) => {
         this.productService.showMessage('Produto criado com sucesso!', 'success');
         this.router.navigate(['/products']);
       });
