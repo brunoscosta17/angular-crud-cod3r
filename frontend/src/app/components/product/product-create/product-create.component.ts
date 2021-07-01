@@ -11,9 +11,8 @@ import { ProductService } from '../product.service';
 })
 export class ProductCreateComponent implements OnInit {
 
-  // form: FormGroup;
-
   product: Product = {
+    id: 0,
     name: '',
     price: 0
   }
