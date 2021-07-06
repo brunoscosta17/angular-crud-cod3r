@@ -52,6 +52,7 @@ import { ProductTableComponent } from './components/product/product-table/produc
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
+import { DialogConfirmComponent } from './shared/components/dialog-confirm/dialog-confirm.component';
 
 registerLocaleData(localePt);
 
@@ -68,7 +69,11 @@ registerLocaleData(localePt);
     ProductCreateComponent,
     ProductReadComponent,
     ProductTableComponent,
-    ProductUpdateComponent
+    ProductUpdateComponent,
+    DialogConfirmComponent
+  ],
+  entryComponents: [
+    DialogConfirmComponent
   ],
   imports: [
     BrowserModule,
@@ -107,6 +112,9 @@ registerLocaleData(localePt);
     MatTableModule,
     MatSortModule,
     MatPaginatorModule
+  ],
+  exports: [
+    DialogConfirmComponent
   ],
   providers: [
     {

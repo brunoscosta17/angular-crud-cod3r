@@ -25,10 +25,10 @@
           <a routerLink="update/{{row.id}}" class="edit">
             <i class="material-icons">edit</i>
           </a>
-          <a routerLink="" class="delete">
+          <a class="delete" (click)="delete(row.id)">
             <i class="material-icons">delete</i>
           </a>
-          <a routerLink="" class="view">
+          <a class="view">
             <i class="material-icons">visibility</i>
           </a>
         </td>

@@ -6,6 +6,10 @@ table {
     margin-right: 10px;
 }
 
+i {
+    cursor: pointer
+}
+
 .edit > i {
     color: #d9cd26;
 }

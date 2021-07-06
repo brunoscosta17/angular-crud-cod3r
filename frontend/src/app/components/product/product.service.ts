@@ -41,4 +41,8 @@ export class ProductService {
     return this.http.put<Product>(`${this.baseURL}/${product.id}`, product);
   }
 
+  delete(id: number): Observable<Product> {
+    return this.http.delete<Product>(`${this.baseURL}/${id}`);
+  }
+
 }
